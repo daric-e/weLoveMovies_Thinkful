@@ -1,6 +1,6 @@
 const service = require('./reviews.service');
-const hasProperties = require('../errors/hasProperties');
-const asyncErrorBoundary = require('../errors/asyncErrorBoundary');
+const hasProperties = require('../Errors/hasProperties');
+const asyncErrorBoundary = require('../Errors/asyncErrorBoundary');
 
 const hasRequiredProperties = hasProperties('content' || 'score');
 

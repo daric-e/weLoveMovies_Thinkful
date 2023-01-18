@@ -1,5 +1,5 @@
 const service = require('./theaters.service');
-const asyncErrorBoundary = require('../errors/asyncErrorBoundary');
+const asyncErrorBoundary = require('../Errors/asyncErrorBoundary');
 
 async function list(req, res) {
   res.json({ data: await service.list() });

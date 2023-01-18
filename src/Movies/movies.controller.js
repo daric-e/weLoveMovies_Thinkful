@@ -1,5 +1,5 @@
 const service = require('./movies.service');
-const asyncErrorBoundary = require('../errors/asyncErrorBoundary');
+const asyncErrorBoundary = require('../Errors/asyncErrorBoundary');
 
 async function movieExists(req, res, next) {
     const movie = await service.read(req.params.movieId);
